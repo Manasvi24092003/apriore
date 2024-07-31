@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association Rules</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico|Arimo|Hind:300|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            background-color: rgb(230, 190, 190);
+            font-family: 'Arimo', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: rgb(3, 1, 14);
+            margin-top: 50px;
+            font-family: 'Pacifico', cursive;
+        }
+
+        form {
+            display: inline-block;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-family: 'Hind', sans-serif;
+            font-size: 16px;
+        }
+
+        input[type="file"] {
+            margin: 10px 0;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(3, 1, 14);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(2, 0, 10);
+        }
+    </style>
+</head>
+<body>
+    <h1>Association Rules</h1>
+    <form action="/success" method="POST" enctype="multipart/form-data">
+        <label for="file">Upload file here:</label><br>
+        <input type="file" name="file" id="file"/><br>
+        <input type="submit" value="Upload"/>
+    </form>
+</body>
+</html>
